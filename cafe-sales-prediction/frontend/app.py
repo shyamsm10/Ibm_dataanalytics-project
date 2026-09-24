@@ -37,8 +37,20 @@ html, body, [class*="css"] {
 }
 
 /* ── Hide default Streamlit chrome ── */
-#MainMenu, footer, header { visibility: hidden; }
+#MainMenu, footer { visibility: hidden; }
+[data-testid="stToolbar"] { visibility: hidden; }
+[data-testid="stHeader"] { visibility: hidden; height: 0 !important; min-height: 0 !important; }
+[data-testid="stExpandSidebarButton"] { visibility: visible !important; position: fixed; top: 0.5rem; left: 0; z-index: 999; }
 .block-container { padding-top: 1.5rem; padding-bottom: 2rem; }
+
+/* ── Sidebar expand button — always visible when sidebar is collapsed ── */
+[data-testid="stExpandSidebarButton"] button,
+[data-testid="stExpandSidebarButton"] svg {
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: #e2e8f0 !important;
+    fill: #e2e8f0 !important;
+}
 
 /* ── Sidebar ── */
 [data-testid="stSidebar"] {
