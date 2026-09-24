@@ -1,0 +1,35 @@
+{
+  "Ridge Regression": {
+    "MAE": 1.5702,
+    "RMSE": 2.1901,
+    "R2": 0.8258
+  },
+  "Decision Tree": {
+    "MAE": 0.6623,
+    "RMSE": 1.5949,
+    "R2": 0.9076
+  },
+  "Random Forest": {
+    "MAE": 0.6027,
+    "RMSE": 1.4679,
+    "R2": 0.9217
+  },
+  "Gradient Boosting": {
+    "MAE": 0.623,
+    "RMSE": 1.44,
+    "R2": 0.9247
+  },
+  "best_model": "Gradient Boosting",
+  "feature_columns": [
+    "item_encoded",
+    "category_encoded",
+    "Quantity",
+    "Price Per Unit",
+    "month",
+    "day_of_week",
+    "week_of_year",
+    "quarter",
+    "is_weekend",
+    "day_of_month"
+  ]
+}
